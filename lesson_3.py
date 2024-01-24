@@ -15,7 +15,10 @@ elif function == "*":
     result_mul = number_1 * number_2
     print("Result: " + str(result_mul))
 elif function == "/":
-    result_div = number_1 / number_2
-    print("Result: " + str(result_div))
+    if number_2 != 0:
+        result_div = number_1 / number_2
+        print("Result: " + str(result_div))
+    else:
+          print("Cannot divide by zero!")
 else:
     print("Error!")
