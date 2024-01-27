@@ -5,9 +5,9 @@ my_list = [0, 1, 0, 8, 6, 24, 3, 0]
 
 zero_count = my_list.count(0)
 
-for _ in range(zero_count):
+for number in range(zero_count):
     my_list.remove(0)
-for _ in range(zero_count):
+for number in range(zero_count):
     my_list.append(0)
 
 print(my_list)
@@ -17,3 +17,14 @@ my_list.sort(key=lambda x: x ==0)
 
 print(my_list)
 
+
+#EXERCISE_2
+
+my_list = [1, 2, 3, 4, 5]
+index = 0
+
+for number in range(0, len(my_list), 2):
+    index += my_list[number]
+    result = my_list[-1] * index
+
+print(result)
