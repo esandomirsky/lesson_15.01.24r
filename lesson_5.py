@@ -1,4 +1,4 @@
-###___UPDATED CALCULATOR___###
+###___UPDATED CALCULATOR___###EXERCISE_#2
 
 while True:
     number_1 = (input("Enter first number:"))
@@ -37,3 +37,28 @@ while True:
     if choice.lower() != "yes":
         print("Goodbye!")
         break
+
+#######___VARIABLE_NAME___#####EXERCISE_#1
+
+import string
+import keyword
+
+var_name = input("Enter your variable name:")
+
+if var_name[0].isdigit():
+    print("Invalid input!\nThe first symbol cannot begin of numbers")
+elif var_name[0].isupper():
+    print("Invalid input!\nThe first symbol cannot consist of capital letter")
+elif var_name.isdigit():
+    print("Invalid input!\nThe variable name cannot consist of only numbers")
+elif any(char.isupper() for char in var_name):
+    print("Invalid input!\nThe variable name cannot consist of capital letter")
+elif any(char in string.punctuation.replace('_', '') or char == ' ' for char in var_name):
+    print("Invalid input!\nThe variable name cannot consist of punctuation or 'space'")
+elif var_name in keyword.kwlist:
+    print("Invalid input!\nThe variable name is already reserved by python")
+else:
+    print("Your variable name confirm!")
+
+######___THE_SECRET_CODE_TO_NICK___####EXERCISE_*
+
