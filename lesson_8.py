@@ -6,8 +6,8 @@ def add_one(some_list):
     num = int(num_str)
     num += 1
     result = []
-    for index in str(num):
-        result.append(int(index))
+    for element in str(num):
+        result.append(int(element))
     return result
 
 
